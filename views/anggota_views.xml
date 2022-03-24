@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- perpustakaan.anggota tree view -->
+    <record id="perpustakaan_anggota_view_tree" model="ir.ui.view">
+        <field name="name">Daftar Anggota Perpustakaan</field>
+        <field name="model">perpustakaan.anggota</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="jenis_kelamin"/>
+                <field name="fakultas"/>
+                <field name="jurusan"/>
+                <field name="angkatan"/>
+                <field name="alamat"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- perpustakaan.anggota form view -->
+    <record id="perpustakaan_anggota_view_form" model="ir.ui.view">
+        <field name="name">Form Anggota Perpustakaan</field>
+        <field name="model">perpustakaan.anggota</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="name"/>
+                        <field name="jenis_kelamin"/>
+                        <field name="fakultas"/>
+                        <field name="jurusan"/>
+                        <field name="angkatan"/>
+                        <field name="alamat"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- perpustakaan.anggota action window -->
+    <record id="perpustkaan_anggota_action" model="ir.actions.act_window">
+        <field name="name">Daftar Anggota Perpustakaan</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">perpustakaan.anggota</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem 
+        id="perpustakaan_anggota_menu_act" 
+        name="Anggota Perpustakaan"
+        parent="perpustakaan_partner_menu_categ"
+        action="perpustkaan_anggota_action"
+        sequence="20"
+    />
+
+</odoo>
