@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- perpustakaan.karyawan tree view -->
+    <record id="perpustakaan_karyawan_view_tree" model="ir.ui.view">
+        <field name="name">Daftar Karyawan Perpustakaan</field>
+        <field name="model">perpustakaan.karyawan</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="kode_karyawan"/>
+                <field name="name"/>
+                <field name="jenis_kelamin"/>
+                <field name="jabatan"/>
+                <field name="nomor_telepon"/>
+                <field name="alamat"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- perpustakaan.karyawan form view -->
+    <record id="perpustakaan_karyawan_view_form" model="ir.ui.view">
+        <field name="name">Form Karyawan Perpustakaan</field>
+        <field name="model">perpustakaan.karyawan</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="kode_karyawan"/>
+                        <field name="name"/>
+                        <field name="jenis_kelamin"/>
+                        <field name="jabatan"/>
+                        <field name="nomor_telepon"/>
+                        <field name="alamat"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <!-- perpustakaan.karyawan action window -->
+    <record id="perpustakaan_karyawan_action" model="ir.actions.act_window">
+        <field name="name">Daftar Karyawan Perpustakaan</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">perpustakaan.karyawan</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem 
+        id="perpustakaan_karyawan_menu_act" 
+        name="Karyawan Perpustakaan"
+        parent="perpustakaan_partner_menu_categ" 
+        action="perpustakaan_karyawan_action" 
+        sequence="10"
+    />
+
+</odoo>
