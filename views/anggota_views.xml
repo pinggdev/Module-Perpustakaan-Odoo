@@ -8,6 +8,7 @@
         <field name="arch" type="xml">
             <tree>
                 <!-- Add your fields here -->
+                <field name="kode_anggota"/>
                 <field name="name"/>
                 <field name="jenis_kelamin"/>
                 <field name="fakultas"/>
@@ -27,6 +28,7 @@
                 <sheet>
                     <group>
                         <!-- Add your fields here -->
+                        <field name="kode_anggota"/>
                         <field name="name"/>
                         <field name="jenis_kelamin"/>
                         <field name="fakultas"/>

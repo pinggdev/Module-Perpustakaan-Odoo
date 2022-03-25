@@ -5,6 +5,7 @@ class Buku(models.Model):
     _name = 'perpustakaan.buku'
     _description = 'Data Buku Perpustakaan'
 
+    kode_buku = fields.Integer(string='Kode Buku')
     name = fields.Char(string='Judul')
     penulis = fields.Char(string='Penulis')
     penerbit = fields.Char(string='Penerbit')

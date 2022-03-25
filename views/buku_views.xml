@@ -8,6 +8,7 @@
         <field name="arch" type="xml">
             <tree>
                 <!-- Add your fields here -->
+                <field name="kode_buku"/>
                 <field name="name"/>
                 <field name="penulis"/>
                 <field name="penerbit"/>
@@ -25,6 +26,7 @@
                 <sheet>
                     <group>
                         <!-- Add your fields here -->
+                        <field name="kode_buku"/>
                         <field name="name"/>
                         <field name="penulis"/>
                         <field name="penerbit"/>

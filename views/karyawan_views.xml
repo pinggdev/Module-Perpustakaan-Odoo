@@ -11,8 +11,7 @@
                 <field name="kode_karyawan"/>
                 <field name="name"/>
                 <field name="jenis_kelamin"/>
-                <field name="jabatan"/>
-                <field name="nomor_telepon"/>
+                <field name="telp"/>
                 <field name="alamat"/>
             </tree>
         </field>
@@ -30,8 +29,7 @@
                         <field name="kode_karyawan"/>
                         <field name="name"/>
                         <field name="jenis_kelamin"/>
-                        <field name="jabatan"/>
-                        <field name="nomor_telepon"/>
+                        <field name="telp"/>
                         <field name="alamat"/>
                     </group>
                 </sheet>
