@@ -32,6 +32,7 @@
         'views/karyawan_views.xml',
         'views/anggota_views.xml',
         'views/buku_views.xml',
+        'views/rak_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- perpustakaan_rak tree view -->
+    <record id="perpustakaan_rak_view_tree" model="ir.ui.view">
+        <field name="name">Daftar Rak Buku Perpustakaan</field>
+        <field name="model">perpustakaan.rak</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="kode_rak"/>
+                <field name="name"/>
+                <field name="kode_buku_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- perpustakaan.rak form view -->
+    <record id="perpustakaan_rak_view_form" model="ir.ui.view">
+        <field name="name">Form Rak Buku Perpustakaan</field>
+        <field name="model">perpustakaan.rak</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="kode_rak"/>
+                        <field name="name"/>
+                        <field name="kode_buku_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- perpustakaan.rak action window -->
+    <record id="perpustakaan_rak_action" model="ir.actions.act_window">
+        <field name="name">Daftar Rak Buku Perpustakaan</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">perpustakaan.rak</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem 
+    id="perpustakaan_rak_menu_act" 
+    name="Rak Buku Perpustakaan" 
+    parent="perpustakaan_data_buku_menu_categ" 
+    action="perpustakaan_rak_action" 
+    sequence="20"/>
+
+</odoo>
