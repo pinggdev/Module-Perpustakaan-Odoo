@@ -13,6 +13,7 @@
                 <field name="penulis"/>
                 <field name="penerbit"/>
                 <field name="tahun_terbit"/>
+                <field name="stok"/>
             </tree>
         </field>
     </record>
@@ -31,6 +32,7 @@
                         <field name="penulis"/>
                         <field name="penerbit"/>
                         <field name="tahun_terbit"/>
+                        <field name="stok"/>
                     </group>
                 </sheet>
             </form>

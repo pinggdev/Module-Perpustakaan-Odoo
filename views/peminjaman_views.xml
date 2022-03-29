@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- perpustakaan.peminjaman tree view -->
+    <record id="perpustakaan_peminjaman_view_tree" model="ir.ui.view">
+        <field name="name">Daftar Peminjaman Buku Perpustakaan</field>
+        <field name="model">perpustakaan.peminjaman</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="tgl_pinjam"/>
+                <field name="tgl_pengembalian"/>
+                <field name="kode_karyawan_id"/>
+                <field name="kode_anggota_id"/>
+                <field name="total"/>
+                <field name="peminjamanbukudetail_ids"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- perpustakaan.peminjaman form view -->
+    <record id="perpustakaan_peminjaman_view_form" model="ir.ui.view">
+        <field name="name">Form Peminjaman Buku Perpustakaan</field>
+        <field name="model">perpustakaan.peminjaman</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="name"/>
+                        <field name="tgl_pinjam"/>
+                        <field name="tgl_pengembalian"/>
+                        <field name="kode_karyawan_id"/>
+                        <field name="kode_anggota_id"/>
+                        <field name="peminjamanbukudetail_ids">
+                            <tree editable="bottom">
+                                <field name="buku_id" />
+                                <field name="qty"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- perpustakaan.peminjaman action window -->
+    <record id="perpustakaan_peminjaman_action" model="ir.actions.act_window">
+        <field name="name">Daftar Peminjaman Buku Perpustakaan</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">perpustakaan.peminjaman</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem 
+    id="perpustakaan_peminjaman_menu_act" 
+    name="Peminjaman Buku Perpustakaan" 
+    parent="perpustakaan_aksi_menu_categ" 
+    action="perpustakaan_peminjaman_action" 
+    sequence="10"/>
+
+</odoo>

@@ -33,6 +33,7 @@
         'views/anggota_views.xml',
         'views/buku_views.xml',
         'views/rak_views.xml',
+        'views/peminjaman_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

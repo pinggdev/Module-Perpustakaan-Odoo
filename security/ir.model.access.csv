@@ -4,3 +4,4 @@ access_perpustakaan_karyawan,access_perpustakaan.karyawan,model_perpustakaan_kar
 access_perpustakaan_anggota,access_perpustakaan.anggota,model_perpustakaan_anggota,,1,1,1,1
 access_perpustakaan_buku,access_perpustakaan.buku,model_perpustakaan_buku,,1,1,1,1
 access_perpustakaan_rak,access_perpustakaan.rak,model_perpustakaan_rak,,1,1,1,1
+access_perpustakaan_peminjaman,access_perpustakaan.peminjaman,model_perpustakaan_peminjaman,,1,1,1,1

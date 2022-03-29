@@ -10,6 +10,8 @@ class Buku(models.Model):
     penulis = fields.Char(string='Penulis')
     penerbit = fields.Char(string='Penerbit')
     tahun_terbit = fields.Date(string='Tahun Terbit')
+    stok = fields.Integer(string='Stok Buku')
+    
     
     
     
